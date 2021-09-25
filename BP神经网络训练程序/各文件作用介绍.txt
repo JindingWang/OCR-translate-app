@@ -1,0 +1,7 @@
+newFNT为训练集和测试集数据
+main为主程序，运行该程序即可训练BP神经网络
+read_train为读取数据集程序
+feature_lattice为提取图片特征程序
+network_train为训练集训练程序
+network_test为测试集测试程序
+BP神经网络训练结果参数 文件夹为权值和阈值的txt文件
