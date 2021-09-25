@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#665b57"
+    tools:context="com.example.wangjd7.ocrtranslate.OcrActivity">
+    <Button
+        android:id="@+id/button0"
+        android:background="@drawable/round_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="88dp"
+        android:drawableLeft="@drawable/photo"
+        android:text="相机"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:onClick="photoClicked"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button1"
+        android:background="@drawable/round_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="93dp"
+        android:drawableLeft="@drawable/album"
+        android:text="相册"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:onClick="albumClicked"
+        android:layout_below="@+id/button0"
+        android:layout_alignLeft="@+id/button0"
+        android:layout_alignStart="@+id/button0" />
+</RelativeLayout>

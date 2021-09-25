@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#665b57"
+    tools:context="com.example.wangjd7.ocrtranslate.TranslateActivity">
+
+    <EditText
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/background_light"
+        android:hint="识别文本"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:background="@android:color/holo_blue_bright"
+        android:onClick="translateClicked"
+        android:text="离线翻译"
+        android:textSize="20sp"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button10"
+        android:layout_alignBottom="@+id/button10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:background="@android:color/holo_blue_bright"
+        android:onClick="APIClicked"
+        android:text="在线翻译"
+        android:textSize="20sp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        android:hint="翻译结果"
+        android:textSize="20sp"/>
+</RelativeLayout>
